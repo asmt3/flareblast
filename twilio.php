@@ -8,12 +8,14 @@
 //extract data from the post
 // extract($_POST);
 
+// +447910229517
 
-$to = '+447427412798';
+// $to = '+447427412798';
+$to = '+447910229517';
 $from = '+441934443026';
 $username = 'AC9d2d7c11becaccf0fbb23d68be2cd9bf';
 $password = '56b20b0e214cba8c3575ddb3dc2c0657';
-$body = isset(_GET['msg']) ? _GET['msg'] : 'Default message...';
+$body = isset($_POST['msg']) ? $_POST['msg'] : 'Default message...';
 
 //set POST variables
 $url = 'https://api.twilio.com/2010-04-01/Accounts/AC9d2d7c11becaccf0fbb23d68be2cd9bf/Messages';
